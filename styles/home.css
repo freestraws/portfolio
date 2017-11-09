@@ -15,6 +15,11 @@ html{
 	overflow: hidden;
 }
 
+html, body{
+  height:100%;
+  width:100%;
+}
+
 #init{
 	font-size: 300%;
 	text-align: center;
@@ -22,10 +27,16 @@ html{
 	top: 15%;
 }
 
-nav{
-	position: absolute;
-	top:35%;
-	left:35%;
+h1{
+  text-align: center;
+  width:100%;
+  position: absolute;
+}
+
+.nav-container{
+  width:100%;
+  text-align:center;
+  padding:20% 0;
 }
 
 nav:hover #init{
@@ -42,4 +53,7 @@ nav:hover #init{
 	#init{
 		font-size: 250%;
 	}
+  h1{
+    position: inherit;
+  }
 }

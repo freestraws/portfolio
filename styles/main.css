@@ -8,7 +8,7 @@
   --textsize: 150%;
   --hovertext: 200%;
 }
-html { 
+html {
   background: var(--bcolor);
   width: 98.8vw;
   height:auto;
