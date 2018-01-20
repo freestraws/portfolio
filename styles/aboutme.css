@@ -1,14 +1,14 @@
 @import "main.css";
 
 :root{
-	--rotate: rotate(180deg);
-	--textsize: 1em;
-    --hovertext: 1.5em;
+	
 }
+
 header{
 	position: fixed;
 	float: left;
 }
+
 nav{
 	display: block;
 	position: relative;
@@ -40,14 +40,6 @@ aside ul li a{
 main{
 	margin-left: 15%;
 	padding-left: 1em;
-}
-
-main:not(td) img{
-	margin-right: 2%;
-	width: 50%;
-	max-width: 1000px;
-	float: left;
-	box-shadow: 2px 2px 5px black;
 }
 
 aside, main{

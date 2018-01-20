@@ -1,0 +1,122 @@
+:root{
+  --minwidth: 7vmax;
+  --maxwidth: 12vmax;
+  --bcolor: linear-gradient(to left, #176f5d , #237A57);
+  --text: #0A2954;
+  --rotate: rotate(0deg);
+  --textsize: 150%;
+  --hovertext: 180%;
+}
+
+nav{
+    border-radius: 50%;
+    width: var(--minwidth);
+    height: var(--minwidth);
+    min-width: var(--minwidth);
+    max-width: var(--maxwidth);
+    min-height: var(--minwidth);
+    max-height: var(--maxwidth);
+    opacity: 0.5;
+    position: relative;
+    clear:both;
+    margin:auto;
+    transition: width .5s, height .5s, opacity 1s, transform 1s ease-in;
+}
+
+nav:before{
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: -1;
+  background: url(../images/compass.png) 50% 50% no-repeat;
+  background-size: contain;
+  -webkit-transform: var(--rotate);
+  -moz-transform: var(--rotate);
+  -ms-transform: var(--rotate);
+  -o-transform: var(--rotate);
+  transform: var(--rotate);
+  transition: transform 1s ease-in;
+}
+
+nav:hover{
+    width: var(--maxwidth);
+    height: var(--maxwidth);
+    opacity: 0.9;
+}
+
+nav:hover .center{
+  top:35%;
+  font-size: var(--hovertext)
+}
+
+
+.center{
+  position:relative;
+  text-align:center;
+  top:25%;
+  font-size: var(--textsize);
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.hover{
+  display:none;
+}
+
+nav img{
+  width: 6vmax;
+  top:-2vmax;
+  position: relative;
+}
+
+nav:hover .nav-item a{
+  display: block;
+}
+
+.nav-item{
+  position: absolute;
+  display: block;
+  text-align: center;
+  width:100%;
+  margin: 0;
+  padding:0;
+}
+
+.nav-item a{
+  display: none;
+  color: var(--text);
+  text-decoration: none;
+  font-size: var(--textsize);
+  opacity: 0.5;
+  transition: all 0.5s;
+}
+
+.current a{
+  /*text-shadow: 1px 2px grey;*/
+}
+
+.nav-item a:hover{
+  opacity: 1;
+}
+
+#right{
+  top: 40%;
+  left: 50%;
+}
+
+#left{
+  top: 40%;
+  right:50%;
+}
+
+#bottom{
+  top: 90%;
+  left:0%;
+}
+
+#top{
+  left:0%;
+}

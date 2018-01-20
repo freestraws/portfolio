@@ -1,0 +1,52 @@
+@import url("aboutme.css");
+
+html{
+  background: url("../images/paper.jpg");
+  background-size: cover;
+}
+
+header{
+  width: 12%;
+}
+
+main{
+  width: 80%;
+  padding: 0;
+}
+
+
+.paren{
+	font-size: 75%;
+}
+
+figure{
+  padding: 2.5px;
+  background-color: #115345;
+  border: 2px solid #19715cb3;
+}
+
+figure a{
+  color: #161c1a;
+}
+
+figure img{
+  border-radius: 10px;
+}
+
+figcaption{
+  padding-bottom: 15px;
+}
+
+
+@media screen and (max-width: 800px){
+  figure figcaption{
+    display: none;
+  }
+}
+
+.origami p{
+  margin-top:10px;
+  background-color: #d0c9c9;
+  padding:5px;
+  border-radius: 5px;
+}

@@ -20,10 +20,8 @@ html, body{
   width:100%;
 }
 
-#init{
+.center{
 	font-size: 300%;
-	text-align: center;
-	position: relative;
 	top: 15%;
 }
 
@@ -39,8 +37,8 @@ h1{
   padding:20% 0;
 }
 
-nav:hover #init{
-	display:none;
+nav .center{
+  top:15%;
 }
 
 @media only screen and (max-width: 850px){
@@ -50,7 +48,7 @@ nav:hover #init{
 	.nav-item a{
 		font-size: 150%;
 	}
-	#init{
+	.center{
 		font-size: 250%;
 	}
   h1{

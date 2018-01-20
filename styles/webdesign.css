@@ -1,0 +1,32 @@
+@import "main.css";
+
+header{
+	position: fixed;
+	float: left;
+}
+nav{
+	display: block;
+	margin-left: 60%;
+	margin-top: 20%;
+	margin-bottom: 15%;
+}
+main{
+	margin-left: 15%;
+}
+
+main a{
+	text-decoration:none;
+	font-size:150%;
+}
+
+.figures{
+	display:flex;
+}
+
+figure{
+	margin: 1em 10px;
+}
+
+figure img{
+	max-width: 100%;
+}
