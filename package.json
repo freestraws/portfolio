@@ -4,6 +4,7 @@
   "description": "portfolio site",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/freestraws/freestraws.github.io/issues"
   },
-  "homepage": "https://github.com/freestraws/freestraws.github.io#readme"
+  "homepage": "https://github.com/freestraws/freestraws.github.io#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
