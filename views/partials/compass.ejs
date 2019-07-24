@@ -1,21 +1,26 @@
 <script type="text/javascript" src="/lib/compass.js"></script>
 <nav>
-    <div class = "nav-item current" id = "top">
-        <a href="index.html">
-            <img src="/images/shipIcon.png"><span class = "hover">Where To?</span>
+    <div class = "nav-item" id = "top">
+        <a href= <%= top %> >
+            <img src="/images/<%= top %>.png"><span class = "hover"><%= top %> </span>
         </a>
     </div>
     <div class = "nav-item" id ="left">
-        <a href="webdesign.html">
-            <img src="/images/webDesignIcon.png"><span class = "hover">web design</span>
+        <a href=<%= left %>>
+            <img src="/images/<%- left %>.png"><span class = "hover"><%= left %></span>
         </a>
     </div>
     <div class = "nav-item" id ="bottom">
-        <a href="aboutme.html"><img src="/images/pusheen-sushi.jpg"><span class = "hover">about</span></a>
+        <a href=<%= bottom %>><img src="/images/<%= bottom %>.png"><span class = "hover"><%= bottom %></span></a>
     </div>
     <div class = "nav-item" id ="right">
-        <a href="other.html">
-            <img src="/images/ship.png"><span class = "hover">other</span>
+        <a href=<%= right %>>
+            <img src="/images/<%= right %>.png"><span class = "hover"><%= right %></span>
+        </a>
+    </div>
+    <div class = "nav-item current" id ="center">
+        <a href="/">
+            <img src="/images/<%= center %>.png"><span class = "hover"><%= center %></span>
         </a>
     </div>
     <div class="center"></div>
