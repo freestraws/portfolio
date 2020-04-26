@@ -22,11 +22,13 @@ app.get('/academic', (req, res) => res.render('pages/academic',
                         bottom: "work",
                         right:  "other",
                         center: "home"}))
+
 app.get('/squares', (req, res) => res.render('pages/squares',
                         {top:   "academic",
                         left:   "current",
                         bottom: "work",
                         right:  "other",
                         center: "home"}))
+
 app.get('/work', (req, res) => res.render('pages/work'))
 app.get('/current', (req, res) => res.render('pages/current'))
