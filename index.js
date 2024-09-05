@@ -15,7 +15,12 @@ app.get('/', (req, res) => res.render('pages/home',
                         right:  "other",
                         center: "home"}))
 
-app.get('/other', (req, res) => res.render('pages/other'))
+app.get('/other', (req, res) => res.render('pages/other',
+  {top:   "academic",
+  left:   "current",
+  bottom: "work",
+  right:  "other",
+  center: "home"}))
 app.get('/academic', (req, res) => res.render('pages/academic',
                         {top:   "academic",
                         left:   "current",
@@ -30,5 +35,23 @@ app.get('/squares', (req, res) => res.render('pages/squares',
                         right:  "other",
                         center: "home"}))
 
-app.get('/work', (req, res) => res.render('pages/work'))
-app.get('/current', (req, res) => res.render('pages/current'))
+app.get('/work', (req, res) => res.render('pages/work',
+  {top:   "academic",
+    left:   "current",
+    bottom: "work",
+    right:  "other",
+    center: "home"}
+))
+app.get('/current', (req, res) => res.render('pages/current',
+  {top:   "academic",
+    left:   "current",
+    bottom: "work",
+    right:  "other",
+    center: "home"}
+))
+app.get('/txtadventure', (req, res) => res.render('pages/txtadventure',
+  {top:   "academic",
+    left:   "current",
+    bottom: "work",
+    right:  "other",
+    center: "home"}))
